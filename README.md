@@ -1,6 +1,9 @@
 # private-ipfs-docker
 
-To build the Docker file:
+The precompiled docker image is available for download at https://hub.docker.com/r/newo/private-ipfs-node
+
+Alternatively, if you wish to manually build the Docker file, simply run:
+
 ```
 docker build -t private-ipfs-node .
 ```
