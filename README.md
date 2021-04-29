@@ -29,4 +29,4 @@ When the Bash script is ran, the output will look similar to below:
 
 Copy the the *third* line (the key value) and pass it to the ```-e SWARM_KEY``` flag when running the image. All nodes need to use the same key in order to communicate with each other in the private IPFS network.
 
-[1] S.vanLaar,“Deploy a private IPFS network in 5 steps,” 2019. [Online]. Available: https://medium.com/@svanlaar/deploy-a-private-ipfs-network-on-ubuntu-in-5-steps-5aad95f7261b
+[1] S. van Laar,“Deploy a private IPFS network in 5 steps,” 2019. [Online]. Available: https://medium.com/@svanlaar/deploy-a-private-ipfs-network-on-ubuntu-in-5-steps-5aad95f7261b
