@@ -1,4 +1,13 @@
+FROM node 
+WORKDIR /webUI
+RUN git clone https://github.com/ipfs/ipfs-webui
+RUN cd ipfs-webui && npm install && npm --depth 20 update caniuse-lite browserslist && npm run build
+
 FROM ipfs/go-ipfs
+
+RUN mkdir build
+# Copy the IPFS webUI build from previous stage
+COPY --from=0 /webUI/ipfs-webui/build build
 
 # The setup.sh script is used to setup private IPFS and replaces the default start_ipfs 
 # file provided by the ipfs/go-ipfs image 
