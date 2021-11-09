@@ -14,7 +14,7 @@ docker build -t private-ipfs-node .
 
 To run the image (this can be ran *n* times to create *n* peers for the private network):
 ```
-docker run -d -e SWARM_KEY="8981939525395dc0ed49ffc8c9d2e91b6e23bb591ccc53762e8a4e83946d5f53" private-ipfs-node
+docker run -d -e SWARM_KEY="8981939525395dc0ed49ffc8c9d2e91b6e23bb591ccc53762e8a4e83946d5f53" newo/private-ipfs-node
 ```
 
 The SWARM_KEY given above is only an example. You should generate your own swarm key using  [Kubuxu /go-ipfs-swarm-key-gen ](https://github.com/Kubuxu/go-ipfs-swarm-key-gen "Kubuxu /go-ipfs-swarm-key-gen ") or directly in a Bash terminal using the following script [1]:
